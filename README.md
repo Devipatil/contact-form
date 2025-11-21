@@ -16,6 +16,14 @@ A simple, clean contact form using HTML, CSS, and JavaScript with validation ✅
 
 ---
 
+## 📷 Screenshots
+
+| Desktop View                | Mobile View                  |
+|-----------------------------|------------------------------|
+| ![Desktop Screenshot](assets/desktop.png) | ![Mobile Screenshot](assets/mobile.png)   |
+
+---
+
 ## 🚀 How to Use
 
 1. Open `index.html` in your browser 💻
