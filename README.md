@@ -1,4 +1,4 @@
-# Contact Form Project
+# Contact Form 
 
 A simple, clean contact form using HTML, CSS, and JavaScript with validation ✅.
 
@@ -33,13 +33,17 @@ A simple, clean contact form using HTML, CSS, and JavaScript with validation ✅
 5. Receive confirmation ✨
 
 ---
-
-## 🛠️ Files included
-
-- `index.html` 📝
-- `style.css` 🎨
-- `script.js` 💻
-
+📂 Project Structure
+```
+contact-form/
+│
+├── assets/
+|   ├── desktop.png
+|   └── mobile.png
+├── index.html
+├── script.js
+└── style.css
+```
 ---
 
 ## 🌟 Tips
