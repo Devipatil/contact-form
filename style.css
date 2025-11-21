@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+.container {
+  background-color: #fff;
+  padding: 36px 32px 28px 32px;
+  border-radius: 14px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-weight: 700;
+  color: #222;
+}
+
+/* Form group styling */
+.form-group {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 1rem;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+/* Inputs and textarea */
+input,
+textarea {
+  padding: 10px 14px;
+  border: 1.5px solid #ccc;
+  border-radius: 8px; 
+  font-size: 1rem;
+  font-family: inherit;
+  background-color: #fafafa;
+  transition: 
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    border-radius 0.3s ease;
+  resize: vertical;
+}
+
+/* Highlight invalid inputs */
+input.invalid,
+textarea.invalid {
+  border-color: #e74c3c;
+  background-color: #fff4f4;
+}
+
+/* Gradient border on hover and focus or when highlighted */
+input:hover:not(.invalid),
+textarea:hover:not(.invalid),
+input:focus:not(.invalid),
+textarea:focus:not(.invalid) {
+  border-image-slice: 1;
+  border-width: 2px;
+  border-style: solid;
+  border-image-source: linear-gradient(135deg, #667eea, #764ba2);
+  box-shadow: 0 0 8px rgba(118, 75, 162, 0.5);
+  outline: none;
+  border-radius: 0px;
+}
+
+/* Submit button */
+button[type='submit'] {
+  width: 100%;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  transition: background 0.4s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+/* Hover effect for button */
+button[type='submit']:hover {
+  background: linear-gradient(135deg, #764ba2, #667eea);
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(118, 75, 162, 0.6);
+}
+
+/* Error message text */
+.error-message {
+  color: #e74c3c;
+  font-size: 0.9rem;
+  min-height: 18px;
+  margin-top: 7px;
+}
+
+/* Success message */
+.success-message {
+  display: none;
+  background-color: #def7ec;
+  border: 1.5px solid #34d399;
+  color: #059669;
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .container {
+    padding: 28px 20px 24px 20px;
+  }
+}
